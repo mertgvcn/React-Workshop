@@ -1,5 +1,6 @@
 import './App.css';
 import User from "./components/user";
+import Navbar from "./components/navbar";
 
 //?return içinde süslü parantezlere yazılan şeyler Javascript kodudur.
 //?html ve javascripti iç içe kullanma durumuna JSX deniliyor.
@@ -11,12 +12,22 @@ function App() {
 
   return (
     <div className="container">
-      {x+y /*değişkenleri süslü parantezlerle görebiliyoruz */}
-    
-      <h3 style={{color:"red",fontSize:"20px"}}>App Component</h3>
-      <h4 id="login_info">Login Page</h4>
-      <User/>
-      <User/>
+      <Navbar title = "USER APP NAVBAR"/>
+
+      {x + y /*değişkenleri süslü parantezlerle görebiliyoruz */}
+      <h3 style={{ color: "grey", fontSize: "20px" }}>bu şekilde style atabiliriz</h3>
+
+      <h4 id="user_list_title">User List</h4>
+      <User
+        name="mert"
+        department="software"
+        salary="10000"
+      />
+      <User
+        name="ali"
+        department="design"
+        salary="8000"
+      />
     </div>
   );
 }
