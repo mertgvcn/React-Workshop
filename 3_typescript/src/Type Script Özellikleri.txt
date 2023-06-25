@@ -1,0 +1,29 @@
+  let name: string = "mert"
+  let age: number = 15
+  let done: boolean = true
+  let trial: number|string = "deneme" //hem string hem sayı alabilir
+
+  //*TYPE KULLANIMI
+  // type Obj = { 
+  //   name : string,
+  //   age : number,
+  //   done? : boolean //eğer done gelip gelmeyeceği kesin değilse soru işareti koyuyoruz ve hatayı önlüyoruz
+  // }
+
+  //*INTERFACE KULLANIMI
+  interface Obj {
+    name : string,
+    age : number,
+    done? : boolean
+  }
+
+  interface Obj2 extends Obj{ //objectte tanımlanmış olan özellikleri alabiliyoruz
+    //Obj den gelenleri tekrar yazmaya gerek yok
+    accept? : boolean
+  }
+
+  let person1 : Obj2 = {
+    name : "Mert Güvo",
+    age : 21,
+    done : false
+  }
