@@ -1,0 +1,56 @@
+* { /*bütün elementlerin baştaki özellikleri*/
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body { /*bütün body'nin özellikleri*/
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #EDEFF1;
+}
+
+header {  /*Header.jsx içinde return ettiğimiz header tagi*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 60px;
+  background-color: #1E1F26;
+  color : white;
+  font-size: 25px;
+}
+
+.user-list ul {
+  display: flex; /*flex-direction default olarak row geliyor*/
+  flex-wrap: wrap; /*yan yana dizilince taşanlar aşağıya kaysın*/
+}
+
+.user-list ul li {
+  list-style-type: none;
+}
+
+.user {
+  display: flex; /*foto ve bilgiler yan yana dursun*/
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  background-color: #717171;
+  color: #EDEFF1;
+  border-radius: 10px;
+  margin: 20px;
+  padding: 10px 10px;
+  font-size: 1.2rem;
+}
+
+.user img {
+  border-radius: 40%;
+  margin-right: 10px;
+  width: 100px;
+}
+
+
+
