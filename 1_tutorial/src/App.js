@@ -8,16 +8,15 @@ import Navbar from "./components/navbar";
 function App() {
   const x = 4;
   const y = 6;
-  const check = true;
 
   return (
     <div className="container">
-      <Navbar title = "USER APP NAVBAR"/>
+      <Navbar title="USER APP NAVBAR" />
 
-      {x + y /*değişkenleri süslü parantezlerle görebiliyoruz */}
+      {x + y}
       <h3 style={{ color: "grey", fontSize: "20px" }}>bu şekilde style atabiliriz</h3>
 
-      <h4 id="user_list_title">User List</h4>
+      <h4 id="user_list_title">User List</h4> {/*css dosyasından da style çekebiliriz*/}
       <User
         name="mert"
         department="software"
